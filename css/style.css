@@ -221,6 +221,18 @@ a { color: inherit; }
 .t-photos img { border-radius: 10px; aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
 .t-photos.tall img { aspect-ratio: 3 / 4; }
 .t-photos img:only-child { max-width: 320px; }
+.t-photos.duo { grid-template-columns: 1fr 1fr; }
+.t-photos img.wide { grid-column: 1 / -1; aspect-ratio: 2.15 / 1; }
+.card-photo { border-radius: 10px; aspect-ratio: 16 / 9; object-fit: cover; width: 100%; margin-bottom: 1rem; }
+
+/* 홈 전시 배너 */
+.banner { margin: 0 0 8px; position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.banner img { width: 100%; aspect-ratio: 2.15 / 1; object-fit: cover; }
+.banner figcaption {
+  position: absolute; left: 16px; bottom: 16px;
+  background: rgba(255, 253, 248, .92); padding: .3rem .9rem;
+  border-radius: 999px; font-size: .9rem;
+}
 @media (max-width: 520px) {
   .t-photos { grid-template-columns: 1fr 1fr; gap: 8px; }
   .t-item { padding-left: 48px; }
