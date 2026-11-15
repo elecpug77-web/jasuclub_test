@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>작품 갤러리 · 따땀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧵</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo"><span class="needle">✿</span>따땀</a>
+      <button class="menu-btn" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="index.html">홈</a>
+        <a href="gallery.html" aria-current="page">작품 갤러리</a>
+        <a href="activity.html">활동 기록</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <span class="members-badge">🔒 멤버 전용</span>
+      <h1>작품 갤러리</h1>
+      <p>사진을 누르면 크게 볼 수 있어요.</p>
+    </div>
+
+    <div class="filters">
+      <button class="active" data-filter="all">전체</button>
+      <button data-filter="embroidery">자수</button>
+      <button data-filter="wip">진행 중</button>
+      <button data-filter="sewing">바느질 · 리폼</button>
+      <button data-filter="knit">뜨개 · 전시</button>
+    </div>
+
+    <div class="masonry">
+      <figure data-cat="embroidery">
+        <img src="images/img_6995.jpg" alt="타원 수틀에 수놓은 꽃바구니 자수" loading="lazy">
+        <figcaption><span class="tag">#자수</span><span class="title">리본 꽃바구니 수틀</span></figcaption>
+      </figure>
+      <figure data-cat="embroidery">
+        <img src="images/img_6845.jpg" alt="밀 이삭 자수 복주머니" loading="lazy">
+        <figcaption><span class="tag">#자수</span><span class="title">밀 이삭 복주머니</span></figcaption>
+      </figure>
+      <figure data-cat="embroidery">
+        <img src="images/img_6992.jpg" alt="for you 자수 손거울" loading="lazy">
+        <figcaption><span class="tag">#자수</span><span class="title">‘for you’ 꽃 손거울</span></figcaption>
+      </figure>
+      <figure data-cat="sewing">
+        <img src="images/img_1154.jpg" alt="체크 원단으로 RICH 글자를 아플리케한 티셔츠" loading="lazy">
+        <figcaption><span class="tag">#리폼</span><span class="title">RICH 아플리케 티셔츠</span></figcaption>
+      </figure>
+      <figure data-cat="embroidery">
+        <img src="images/img_7739.jpg" alt="작은 꽃을 수놓은 에코백 세 개" loading="lazy">
+        <figcaption><span class="tag">#자수</span><span class="title">꽃줄 에코백 3종</span></figcaption>
+      </figure>
+      <figure data-cat="wip">
+        <img src="images/img_6713.jpg" alt="초록 리넨에 수놓기 시작한 체인 스티치" loading="lazy">
+        <figcaption><span class="tag">#진행중</span><span class="title">초록 리넨, 여기서 시작!</span></figcaption>
+      </figure>
+      <figure data-cat="embroidery">
+        <img src="images/img_6712.jpg" alt="흰 리넨에 수놓은 풀잎과 나뭇잎" loading="lazy">
+        <figcaption><span class="tag">#자수</span><span class="title">풀잎 스티치 연습</span></figcaption>
+      </figure>
+      <figure data-cat="sewing">
+        <img src="images/img_1153.jpg" alt="빨강 남색 체크 패치워크 숄더백" loading="lazy">
+        <figcaption><span class="tag">#패치워크</span><span class="title">패치워크 숄더백</span></figcaption>
+      </figure>
+      <figure data-cat="knit">
+        <img src="images/img_7738.jpg" alt="체크 테이블 위에 놓인 뜨개 수세미와 자수 소품들" loading="lazy">
+        <figcaption><span class="tag">#뜨개</span><span class="title">뜨개 수세미 &amp; 소품 전시</span></figcaption>
+      </figure>
+      <figure data-cat="wip">
+        <img src="images/img_6711.jpg" alt="초록 리넨 위 진행 중인 자수와 실" loading="lazy">
+        <figcaption><span class="tag">#진행중</span><span class="title">덩굴 라인 수놓는 중</span></figcaption>
+      </figure>
+      <figure data-cat="sewing">
+        <img src="images/img_6355.jpg" alt="오간자 보자기와 매듭 술로 포장한 선물" loading="lazy">
+        <figcaption><span class="tag">#보자기</span><span class="title">매듭 술 보자기 포장</span></figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <div class="lightbox" role="dialog" aria-label="사진 크게 보기">
+    <button class="lb-close" aria-label="닫기">✕</button>
+    <button class="lb-prev" aria-label="이전 사진">‹</button>
+    <img src="" alt="">
+    <p></p>
+    <button class="lb-next" aria-label="다음 사진">›</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <strong>따땀</strong> · 자수 &amp; 뜨개 동아리 · 멤버 전용 페이지<br>
+      © <span id="year"></span> 따땀. 사진 무단 공유를 삼가 주세요.
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
